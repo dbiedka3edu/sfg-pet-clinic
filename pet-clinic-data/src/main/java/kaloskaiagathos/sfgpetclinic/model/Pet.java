@@ -1,7 +1,5 @@
 package kaloskaiagathos.sfgpetclinic.model;
 
-import org.aspectj.weaver.patterns.PerTypeWithin;
-
 import java.time.LocalDate;
 
 public class Pet {
