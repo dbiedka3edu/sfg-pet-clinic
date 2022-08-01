@@ -4,9 +4,11 @@ import kaloskaiagathos.sfgpetclinic.model.Pet;
 import kaloskaiagathos.sfgpetclinic.model.Vet;
 import kaloskaiagathos.sfgpetclinic.services.CrudService;
 import kaloskaiagathos.sfgpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 
