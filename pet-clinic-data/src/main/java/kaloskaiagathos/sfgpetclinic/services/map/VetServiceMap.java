@@ -3,10 +3,11 @@ package kaloskaiagathos.sfgpetclinic.services.map;
 import kaloskaiagathos.sfgpetclinic.model.Pet;
 import kaloskaiagathos.sfgpetclinic.model.Vet;
 import kaloskaiagathos.sfgpetclinic.services.CrudService;
+import kaloskaiagathos.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 
     @Override
