@@ -1,5 +1,8 @@
 package kaloskaiagathos.sfgpetclinic.model;
 
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.Repository;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -51,6 +54,7 @@ public class Owner extends Person {
     public void setPets(Set<Pet> pets) {
         this.pets = pets;
     }
+
 
 
 }
