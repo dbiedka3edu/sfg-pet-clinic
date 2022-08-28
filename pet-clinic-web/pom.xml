@@ -46,8 +46,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
+
         </dependency>
+
+
         <!-- webjars -->
         <dependency>
             <groupId>org.webjars</groupId>
