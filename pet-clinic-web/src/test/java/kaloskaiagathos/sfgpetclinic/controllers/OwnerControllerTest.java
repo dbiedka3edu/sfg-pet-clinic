@@ -55,10 +55,7 @@ class OwnerControllerTest {
                 .andExpect(model().attribute("owners", hasSize(2)));
     }
 
-    @Test
-    void findOwners() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/owners/find")).andExpect(view().name("notimplemented"));
-    }
+
 
     @Test
     void displayOwner() throws Exception {
@@ -69,5 +66,16 @@ class OwnerControllerTest {
                 .andExpect(view().name("owners/ownerDetails"))
                 .andExpect(model().attribute("owner",hasProperty("id", is(1L))));
 
+    }
+
+    @Test
+    void findOwners() throws Exception {
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/owners/find"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("owners/findOwners"))
+                .andExpect(model().attributeExists("owners"));
+
+        
     }
 }
